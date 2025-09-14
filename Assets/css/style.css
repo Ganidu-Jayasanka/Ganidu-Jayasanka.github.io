@@ -327,3 +327,56 @@ body {
     font-size: 1.2rem;
   }
 }
+
+.project-card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+.project-card img {
+  height: 250px;
+  object-fit: cover;
+}
+.card-body {
+  background: #1c1c1c;
+  color: #eaeaea;
+}
+
+.project-card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+.project-card img {
+  height: 250px;
+  object-fit: cover;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* makes arrows white */
+}
+
+.filter-btn.active {
+  background-color: #0dcaf0 !important;
+  color: #121212 !important;
+  font-weight: 600;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;        /* Keeps full image without cropping */
+  max-height: 550px;   /* Adjust based on design */
+  object-fit: contain; /* Fit image without cutting */
+  background: #000;    /* Optional: black background for empty space */
+}
+.card-text {
+  text-align: justify;
+}
