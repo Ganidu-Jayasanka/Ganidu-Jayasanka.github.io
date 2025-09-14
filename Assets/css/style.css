@@ -267,3 +267,63 @@ body {
 .edu-card .card-subtitle {
   font-weight: 500;
 }
+
+/* ===============================
+   Responsive Design Adjustments
+   =============================== */
+
+/* Extra small devices (phones, <576px) */
+@media (max-width: 575.98px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  #typing {
+    font-size: 1rem;
+  }
+  .profile-img {
+    width: 200px;
+    height: 240px;
+  }
+  .about-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  .edu-card {
+    min-height: auto; /* let cards shrink naturally */
+  }
+}
+
+/* Small to medium devices (phones & tablets, <768px) */
+@media (max-width: 767.98px) {
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  .hero .col-md-8, .hero .col-md-4 {
+    text-align: center;
+  }
+  .timeline::before {
+    left: 8px; /* already in your CSS */
+  }
+  .timeline-item {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 15px;
+  }
+  .timeline-item.left, .timeline-item.right {
+    left: 0;
+  }
+  .timeline-content {
+    text-align: left;
+  }
+}
+
+/* Medium devices (tablets, <992px) */
+@media (max-width: 991.98px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  #typing {
+    font-size: 1.2rem;
+  }
+}
